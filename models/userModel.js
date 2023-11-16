@@ -25,6 +25,7 @@ const userSchema = mongoose.Schema({
     type: Numner,
     required: true,
   },
+  token: { type: String, defaultt: "" },
 });
 
 module.exports = mongoose.model("User", userSchema);
